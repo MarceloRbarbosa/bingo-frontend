@@ -1,0 +1,13 @@
+services:
+  frontend:
+    image: bingofrontend
+    build: .
+    ports:
+      - 8080:80
+    networks:
+      - bingonetwork
+        
+networks:
+  bingonetwork:
+    external: true
+    
