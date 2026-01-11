@@ -1,8 +1,56 @@
-# React + Vite
+Frontend do sistema **Bingo Driven**, interface do bingo e interação com a API.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ 
+## Deploy 
 
-Currently, two official plugins are available:
+**Aplicação em produção (Vercel)**
+```
+https://bingo-frontend-six.vercel.app/
+``` 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## STACK
+<ul>
+  <li>Frontend Web</li>
+  <li>React</li>
+  <li>JavaScript</li>
+  <li>Vercel</li>
+  <li>Github Actions</li>
+</ul>
+
+## Variáveis de ambiente
+
+Crie um arquivo .env com:
+```
+VITE_BACKEND=http://localhost:5000
+```
+
+## Executando sem Docker
+
+```
+npm install
+npm run dev
+``` 
+
+## Executando com Docker
+```
+docker build -t bingo-frontend .
+docker run -p 8080:80 --env-file bingo-frontend
+```
+
+## Executando com Docker Compose
+```
+docker compose up -d
+```
+
+## Testes 
+
+```
+npm run test:ci
+```
+
+## CD 
+
+**CD**
+<li>Build automático no VERCEL</li>
+<li>Utilização de GitHub Actions</li>
+
